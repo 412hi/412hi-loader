@@ -72,18 +72,19 @@
 
    İndirdiğiniz keyauth.py dosyasını proje ana dizinine (main.py ile aynı klasöre) kopyalayın.
 
-5. KeyAuth Bilgilerinizi Girin:
+5. ### 🔑 KeyAuth Yapılandırması
 
-   main.py dosyasının başındaki KeyAuth yapılandırmasını kendi panel bilgilerinizle güncelleyin:
+`main.py` dosyasının başında bulunan KeyAuth yapılandırmasını kendi panel bilgilerinizle değiştirin:
 
-   
-   keyauthapp = api(
-    name = "UYGULAMA_ADINIZ",   # KeyAuth panelindeki Application Name \
-    ownerid = "OWNER_ID",       # KeyAuth panelindeki Owner ID \
-    version = "1.0",            # Versiyon \
-    hash_to_check = None \
+```python
+keyauthapp = api(
+    name      = "UYGULAMA_ADINIZ",   # KeyAuth panelindeki Application Name
+    ownerid   = "OWNER_ID",          # KeyAuth panelindeki Owner ID
+    version   = "1.0",               # Uygulama sürümü
+    hash_to_check = None             # Dosya bütünlük kontrolü (isteğe bağlı)
 )
- 7. Uygulamayı Çalıştırın:
+```
+ 6. Uygulamayı Çalıştırın:
    python main.py
 
 🧪 Test için Demo Anahtar = 412HI-DEMO*2026
